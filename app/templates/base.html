@@ -7,7 +7,13 @@
 		{% endif %}
 	</head>
 	<body>
-		<div>Microblog: <a href="/index">Home</a></div>
+		<div>Microblog:
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/login">Log In</a></li>
+                <li><a href="/test">Test Page</a></li>
+            </ul>
+        </div>
 		<hr>
 		{% with messages = get_flashed_messages() %}
 		{% if messages %}
